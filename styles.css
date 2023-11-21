@@ -13,6 +13,8 @@
         url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
         url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
         url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 #sidebar{
     display: flex;
@@ -26,10 +28,9 @@
     background-image: url(https://images.unsplash.com/photo-1585202900154-cf66e657d8d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8)
 }
 #caption{
-    position: absolute;
-    top:70px;
-    min-height: 100px;
-    width: 330px;
-    border: 10px;
-    border-color: red;
+    background-color: rgba(50, 80, 80, 0.5);
+    display: inline;
+    height: 100px;
+    width: 100%;
+    margin-top: 200px;
 }

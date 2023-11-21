@@ -6,11 +6,30 @@
 :root{
     font-size: 62.5%;
 }
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Regular.eot');
+    src:url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+        url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+        url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+        url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');
+}
 #sidebar{
     display: flex;
-    height: 900px;
+    position: relative;
+    justify-content: flex-start;
     width: 330px;
+    margin: 0 auto;
+    min-height: 700px;
     margin-left: 100px;
     border-radius: 10px;
     background-image: url(https://images.unsplash.com/photo-1585202900154-cf66e657d8d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8)
+}
+#caption{
+    position: absolute;
+    top:70px;
+    min-height: 100px;
+    width: 330px;
+    border: 10px;
+    border-color: red;
 }

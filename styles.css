@@ -6,6 +6,9 @@
 :root{
     font-size: 62.5%;
 }
+.container{
+    display: flex;
+}
 @font-face {
     font-family: "Fira Sans";
     src: url('fonts/fira/eot/FiraSans-Regular.eot');
@@ -29,8 +32,41 @@
 }
 #caption{
     background-color: rgba(50, 80, 80, 0.5);
-    display: inline;
+    display: flex;
+    justify-content: center;
     height: 100px;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 13rem;
+    position: absolute;
+    gap: 5px;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    mix-blend-mode: inherit;
+}
+#logo-name{
+    font-family: "Fira Sans" 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#part-one{
+    min-height: 23rem;
+    background-color: lightgrey;
+    max-width: 42rem;
+}
+#p-one{
+    font-size: large;
+    font-weight: 100;
+    padding: 6rem 1.5rem;
+}
+#p-two{
+    font-size: large;
+    font-weight: 100;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem
 }

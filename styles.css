@@ -57,7 +57,7 @@ img{
 #part-one{
     min-height: 23rem;
     background-color: lightgrey;
-    max-width: 42rem;
+    max-width: 47rem;
 }
 #p-one{
     font-size: large;
@@ -69,4 +69,14 @@ img{
     font-weight: 100;
     padding-left: 1.5rem;
     padding-bottom: 0.5rem
+}
+#part-two{
+    max-width: 47rem;
+    min-height: 20rem;
+    background-color: aliceblue;
+}
+h2{
+    padding-top: 0.7rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.9rem;
 }

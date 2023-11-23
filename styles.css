@@ -85,25 +85,23 @@ h2{
     padding-left: 1.5rem;
     padding-bottom: 0.9rem;
 }
-input:focus{
-    border-color: red;
-    box-shadow: 1.5rem;
-}
 ul>*{
     display:inline-block;
     box-sizing: border-box;
     padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
 }
-ul>*:focus{
-    border-color: blue
-    ;
+input[type=text]:focus{
+    border: 4px solid blueviolet;
 }
 #first-name{
     max-width: 23.5rem;
 }
 #last-name{
     display: block;
+}
+#last-name:focus{
+    border-color: blue;
 }
 #email{
     max-width: 23rem;
@@ -113,14 +111,23 @@ ul>*:focus{
 }
 #password{
     border-color: #ff7f7f;
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+#password:focus{
+    border: 4px solid blue;
 }
 .error{
     color: red;
 }
 #password-confirm{
+    display: flex;
+    flex-direction: column;
     border-color: #ff7f7f;
-    margin-bottom: 2.5rem;
+    padding-top: -1rem;
+}
+#password-confirm:focus{
+    border:4px solid blue;
 }
 #last-part{
     background-color: whitesmoke;

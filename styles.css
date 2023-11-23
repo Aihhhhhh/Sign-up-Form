@@ -77,7 +77,7 @@ ul{
 }
 #part-two{
     max-width: 47rem;
-    min-height: 20rem;
+    min-height: 25.5rem;
     background-color: aliceblue;
 }
 h2{
@@ -85,35 +85,57 @@ h2{
     padding-left: 1.5rem;
     padding-bottom: 0.9rem;
 }
-ul>*{
-    display:block;
-    padding-left: 1.5rem;
+input:focus{
+    border-color: red;
+    box-shadow: 1.5rem;
 }
-label{
-    padding-bottom: 0.5rem;
+ul>*{
+    display:inline-block;
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+ul>*:focus{
+    border-color: blue
+    ;
 }
 #first-name{
-    display: block;
-    padding-left: 1.5rem;
+    max-width: 23.5rem;
 }
 #last-name{
     display: block;
-    padding-left: 1.5rem;
 }
 #email{
-    display: block;
+    max-width: 23rem;
 }
 #phone-number{
-    display:block;
+    max-width: 23.5rem;
 }
 #password{
+    border-color: #ff7f7f;
     display: block;
 }
+.error{
+    color: red;
+}
 #password-confirm{
-    display: block;
+    border-color: #ff7f7f;
+    margin-bottom: 2.5rem;
 }
 #last-part{
     background-color: whitesmoke;
-    height: 25.5rem;
+    height: 20rem;
     max-width: 47rem;
+}
+#last-part>*{
+    padding-left: 1.5rem;
+}
+#create{
+    background-color: #596D48;
+    color: white;
+    border-radius: 0.7rem;
+    border-color: whitesmoke;
+    padding: 0.7rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
 }

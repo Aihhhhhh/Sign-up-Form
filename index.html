@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="script.js"></script>
     <div class="container">
         <aside>
             <div class="sidebar" id="sidebar">
@@ -21,7 +20,7 @@
                 </div>
             </div>
         </aside>
-        <form>
+        <form method="post">
             <section id="part-one">
                 <p id="p-one">
                     <strong>This is not a real online service! You know you need something like this in your life to actualize your dreams.<br>Sign up <em> now</em> to get started.</strong>
@@ -37,37 +36,43 @@
                         <label for="first-name">
                             FIRST NAME
                         </label>
-                        <input type="text" name="first-username" id="first-name" placeholder="Thor">
+                        <br>
+                        <input type="text" name="first-username" id="first-name" placeholder="Thor" autocomplete="off">
                     </li>
                     <li>
                         <label for="last-name">
                             LAST NAME
                         </label>
-                        <input type="text" name="second-username" id="last-name" placeholder="Wihuri">
+                        <br>
+                        <input type="text" name="second-username" id="last-name" placeholder="Wihuri" autocomplete="off">
                     </li>
                     <li>
                         <label for="email">
                             EMAIL
                         </label>
-                        <input type="text" id="email" name="useremail" >
+                        <br>
+                        <input type="text" id="email" name="useremail" autocomplete="off">
                     </li>
                     <li>
                         <label for="phone-number">
                             PHONE NUMBER
                         </label>
+                        <br>
                         <input type="tel" id="phone-number" name="usernumber">
                     </li>
                     <li>
                         <label for="password">
                             PASSWORD
                         </label>
-                        <input type="text" id="password" name="userpassword">
+                        <input type="password" id="password" name="userpassword" onchange="validate()">
+                        <span class="error"></span>
                     </li>
                     <li>
                         <label for="password-confirm">
                             CONFIRM PASSWORD
                         </label>
-                        <input type="text" id="password-confirm">
+                        <br>
+                        <input type="password" id="password-confirm" onchange="validate()">
                     </li>
                 </ul>
             </section>
@@ -83,5 +88,6 @@
             </section>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
